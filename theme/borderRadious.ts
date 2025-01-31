@@ -4,6 +4,7 @@ export enum BORDER_RADIOUS {
   SM = "12px",
   MD = "18px",
   M = "20px",
+  M_M = "24px",
   M_L = "25px",
   L = "30px",
   XL = "36px",
