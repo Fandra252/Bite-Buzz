@@ -1,69 +1,85 @@
-import { BORDER_RADIOUS, COLOR } from "@/theme";
+import { Subtitle } from "@/components/common/Texts/Text";
+import { BORDER_RADIOUS, COLOR, FONT_SIZE, FONT_WEIGHT } from "@/theme";
 import styled from "styled-components/native";
 
 export const Container = styled.View`
-  /* flex: 1; */
-  height: 100%;
+  flex: 1;
   justify-content: space-between;
   background-color: ${COLOR.SECONDARY};
-  padding-top: 30px;
 `;
 
 export const TopContainer = styled.View`
   width: 100%;
-  height: 30%;
+  height: 286px;
   background-color: ${COLOR.SECONDARY};
   flex-direction: column;
   justify-content: space-between;
+  padding-top: 30px;
 `;
 
 export const BackPressableButtonContainer = styled.View`
   width: 100%;
   height: 20%;
-  justify-content: flex-start;
+  justify-content: center;
   padding-left: 10px;
   padding-top: 20px;
 `;
 
 export const TextContainer = styled.View`
   width: 100%;
-  height: 80%;
   justify-content: center;
   align-items: center;
   padding-bottom: 30px;
 `;
 
+export const Subtitle2 = styled(Subtitle)`
+  font-weight: ${FONT_WEIGHT.bold};
+`;
 export const ButtonContainer = styled.View`
   width: 100%;
-  height: 70%;
-  justify-content: space-around;
+  height: 579px;
+  gap: 40px;
   background-color: ${COLOR.BACKGROUND_PRIMARY};
   border-top-left-radius: ${BORDER_RADIOUS.M_M};
   border-top-right-radius: ${BORDER_RADIOUS.M_M};
   align-items: center;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 `;
 
 export const InputContainer = styled.View`
   width: 327px;
   align-items: center;
-  margin-bottom: 20px;
+  margin-top: 40px;
 `;
 
 export const SubInputContainer = styled.View`
   width: 100%;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 10px;
 `;
 
-export const PasswordInputContainer = styled.View`
+export const MultiInputContainer = styled.View`
   width: 100%;
   flex-direction: row;
-  align-items: center;
-  background-color: ${COLOR.BACKGROUND_SECONDARY};
   justify-content: space-between;
-  padding-right: 10px;
-  border-radius: ${BORDER_RADIOUS.S};
-  overflow: hidden;
+  align-items: center;
+`;
+
+export const LabelTextContainer = styled.View`
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+`;
+export const LabelText = styled.Text`
+  color: ${COLOR.TEXT_PRIMARY};
+  font-size: ${FONT_SIZE.h6};
+  font-weight: ${FONT_WEIGHT.regular};
+`;
+
+export const ResendCodeText = styled.Text`
+  color: ${COLOR.TEXT_PRIMARY};
+  font-size: ${FONT_SIZE.h6};
+  text-decoration: underline;
 `;

@@ -16,7 +16,7 @@ export const PressableButtonSkipText = styled(Text)`
 
 export const LabelText = styled.Text`
   width: 100%;
-  color: ${COLOR.PRIMARY};
+  color: ${COLOR.TEXT_SECONDARY};
   font-size: ${FONT_SIZE.h6};
   font-weight: ${FONT_WEIGHT.regular};
   margin-top: 10px;
@@ -41,4 +41,7 @@ export const Subtitle = styled.Text`
   line-height: 26px;
   margin-top: 10px;
   font-family: "Sen-Regular";
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
 `;

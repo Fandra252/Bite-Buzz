@@ -1,0 +1,1013 @@
+[
+  {
+    "id": 1,
+    "title": "Burger Palace",
+    "products": "Burger - Chicken - Fries - Milkshake - Salad - Wraps",
+    "rating": 4.5,
+    "deliveryTime": "30 min",
+    "deliveryFee": "Free",
+    "image_url": "https://plus.unsplash.com/premium_photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1cmdlciUyMFBhbGFjZXxlbnwwfHwwfHx8MA%3D%3D",
+    "restaurantDetails": "Famous for its juicy burgers and creamy milkshakes, Burger Palace offers a casual dining experience with fast and free delivery.",
+    "categories": {
+      "Burger": [
+        {
+          "name": "Cheeseburger",
+          "title": "Burger Palace",
+          "price": "$8.99",
+          "rating": 4.5,
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "description": "Classic cheeseburger",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://plus.unsplash.com/premium_photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1cmdlciUyMFBhbGFjZXxlbnwwfHwwfHx8MA%3D%3D"
+        },
+        {
+          "name": "Veggie Burger",
+          "price": "$7.49",
+          "rating": 4.5,
+          "description": "Vegetarian patty",
+          "title": "Burger Palace",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        },
+        {
+          "name": "Chicken Burger",
+          "price": "$9.99",
+          "rating": 4.5,
+          "description": "Juicy chicken patty",
+          "title": "Burger Palace",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        },
+        {
+          "name": "Cheeseburger",
+          "price": "$10.49",
+          "rating": 4.5,
+          "description": "Cheese and crispy bacon",
+          "title": "Burger Palace",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        },
+        {
+          "name": "Chicken Burger",
+          "price": "$9.99",
+          "rating": 4.5,
+          "description": "Juicy chicken patty",
+          "title": "Burger Palace",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        },
+        {
+          "name": "Cheeseburger",
+          "price": "$10.49",
+          "rating": 4.5,
+          "description": "Cheese and crispy bacon",
+          "title": "Burger Palace",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        }
+      ],
+      "Chicken": [
+        {
+          "name": "Fried Chicken",
+          "price": "$10.99",
+          "rating": 4.5,
+          "description": "Crispy fried chicken",
+          "title": "Burger Palace",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        },
+        {
+          "name": "Grilled Chicken",
+          "price": "$11.49",
+          "rating": 4.5,
+          "description": "Tender grilled chicken",
+          "title": "Burger Palace",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        },
+        {
+          "name": "Chicken Tenders",
+          "price": "$8.49",
+          "rating": 4.5,
+          "description": "Crispy, golden tenders",
+          "title": "Burger Palace",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        },
+        {
+          "name": "BBQ Chicken Wings",
+          "price": "$9.99",
+          "rating": 4.5,
+          "description": "Sweet BBQ glazed wings",
+          "title": "Burger Palace",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        }
+      ],
+      "Fries": [
+        {
+          "name": "Curly Fries",
+          "price": "$4.99",
+          "rating": 4.5,
+          "description": "Crispy curly fries",
+          "title": "Burger Palace",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        },
+        {
+          "name": "Sweet Potato Fries",
+          "price": "$5.49",
+          "rating": 4.5,
+          "description": "Sweet and crispy",
+          "title": "Burger Palace",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        },
+        {
+          "name": "Loaded Fries",
+          "price": "$6.49",
+          "rating": 4.5,
+          "description": "Fries with cheese and bacon",
+          "title": "Burger Palace",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        },
+        {
+          "name": "Seasoned Fries",
+          "price": "$4.49",
+          "rating": 4.5,
+          "description": "Fries with seasoning",
+          "title": "Burger Palace",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        }
+      ],
+      "Milkshake": [
+        {
+          "name": "Vanilla",
+          "price": "$4.49",
+          "rating": 4.5,
+          "description": "Creamy vanilla shake",
+          "title": "Burger Palace",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        },
+        {
+          "name": "Chocolate",
+          "price": "$4.99",
+          "rating": 4.5,
+          "description": "Rich chocolate shake",
+          "title": "Burger Palace",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        },
+        {
+          "name": "Strawberry",
+          "price": "$4.99",
+          "rating": 4.5,
+          "description": "Sweet strawberry shake",
+          "title": "Burger Palace",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        },
+        {
+          "name": "Oreo",
+          "price": "$5.49",
+          "rating": 4.5,
+          "description": "Oreo cookies and cream",
+          "title": "Burger Palace",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        }
+      ],
+      "Salads": [
+        {
+          "name": "Caesar Salad",
+          "price": "$6.99",
+          "rating": 4.5,
+          "description": "Crisp lettuce with Caesar dressing",
+          "title": "Burger Palace",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        },
+        {
+          "name": "Garden Salad",
+          "price": "$5.49",
+          "rating": 4.5,
+          "description": "Fresh vegetables with vinaigrette",
+          "title": "Burger Palace",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        },
+        {
+          "name": "Chicken Salad",
+          "price": "$8.49",
+          "rating": 4.5,
+          "description": "Grilled chicken with mixed greens",
+          "title": "Burger Palace",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        }
+      ],
+      "Wraps": [
+        {
+          "name": "Chicken Wrap",
+          "price": "$7.99",
+          "rating": 4.5,
+          "description": "Grilled chicken in a soft wrap",
+          "title": "Burger Palace",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        },
+        {
+          "name": "Veggie Wrap",
+          "price": "$6.49",
+          "rating": 4.5,
+          "description": "Vegetables in a wrap",
+          "title": "Burger Palace",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        },
+        {
+          "name": "BBQ Wrap",
+          "price": "$8.49",
+          "rating": 4.5,
+          "description": "BBQ chicken in a wrap",
+          "title": "Burger Palace",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        }
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "title": "Pizza World",
+    "products": "Pizza - Garlic Bread - Salad - Soft Drink - Pasta - Desserts",
+    "rating": 4.7,
+    "deliveryTime": "25 min",
+    "deliveryFee": "$2.00",
+    "image_url": "https://images.unsplash.com/photo-1579751626657-72bc17010498?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fFBpenphJTIwV29ybGR8ZW58MHx8MHx8fDA%3D",
+    "restaurantDetails": "Known for its gourmet pizzas and freshly baked garlic bread, Pizza World is the ultimate destination for Italian food lovers.",
+    "categories": {
+      "Pizza": [
+        {
+          "name": "Margherita",
+          "price": "$10.99",
+          "rating": 4.5,
+          "description": "Classic pizza",
+          "title": "Pizza World",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        },
+        {
+          "name": "Pepperoni",
+          "price": "$12.99",
+          "rating": 4.5,
+          "description": "Spicy pepperoni",
+          "title": "Pizza World",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        },
+        {
+          "name": "BBQ Chicken",
+          "price": "$13.49",
+          "rating": 4.5,
+          "description": "BBQ chicken topping",
+          "title": "Pizza World",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        },
+        {
+          "name": "Hawaiian",
+          "price": "$11.49",
+          "rating": 4.5,
+          "description": "Pineapple and ham",
+          "title": "Pizza World",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        },
+        {
+          "name": "Vegetarian",
+          "price": "$11.99",
+          "rating": 4.5,
+          "description": "Fresh veggies",
+          "title": "Pizza World",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        },
+        {
+          "name": "Meat Lover",
+          "price": "$14.49",
+          "rating": 4.5,
+          "description": "Assorted meats on pizza",
+          "title": "Pizza World",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        }
+      ],
+      "Garlic Bread": [
+        {
+          "name": "Cheesy Garlic Bread",
+          "price": "$4.49",
+          "rating": 4.5,
+          "description": "Garlic with cheese",
+          "title": "Pizza World",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        },
+        {
+          "name": "Stuffed Garlic Bread",
+          "price": "$5.99",
+          "rating": 4.5,
+          "description": "Cheese stuffed bread",
+          "title": "Pizza World",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        }
+      ],
+      "Salad": [
+        {
+          "name": "Caesar Salad",
+          "price": "$6.99",
+          "rating": 4.5,
+          "description": "Classic Caesar",
+          "title": "Pizza World",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        },
+        {
+          "name": "Greek Salad",
+          "price": "$7.49",
+          "rating": 4.5,
+          "description": "Mediterranean style",
+          "title": "Pizza World",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        },
+        {
+          "name": "Garden Salad",
+          "price": "$5.99",
+          "rating": 4.5,
+          "description": "Fresh mixed greens",
+          "title": "Pizza World",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        }
+      ],
+      "Soft Drink": [
+        {
+          "name": "Coke",
+          "price": "$1.99",
+          "rating": 4.5,
+          "description": "Crisp soda",
+          "title": "Pizza World",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        },
+        {
+          "name": "Pepsi",
+          "price": "$1.99",
+          "rating": 4.5,
+          "description": "Popular soda",
+          "title": "Pizza World",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        },
+        {
+          "name": "Sprite",
+          "price": "$1.99",
+          "rating": 4.5,
+          "description": "Lemon-lime soda",
+          "title": "Pizza World",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        },
+        {
+          "name": "Fanta",
+          "price": "$1.99",
+          "rating": 4.5,
+          "description": "Orange soda",
+          "title": "Pizza World",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        }
+      ],
+      "Pasta": [
+        {
+          "name": "Spaghetti Bolognese",
+          "price": "$12.99",
+          "rating": 4.5,
+          "description": "Classic spaghetti",
+          "title": "Pizza World",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        },
+        {
+          "name": "Penne Alfredo",
+          "price": "$13.49",
+          "rating": 4.5,
+          "description": "Creamy Alfredo pasta",
+          "title": "Pizza World",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        },
+        {
+          "name": "Lasagna",
+          "price": "$14.99",
+          "rating": 4.5,
+          "description": "Layered pasta with meat and cheese",
+          "title": "Pizza World",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        }
+      ],
+      "Desserts": [
+        {
+          "name": "Tiramisu",
+          "price": "$4.99",
+          "rating": 4.5,
+          "description": "Classic Italian dessert",
+          "title": "Pizza World",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        },
+        {
+          "name": "Cheesecake",
+          "price": "$5.49",
+          "rating": 4.5,
+          "description": "Smooth and creamy",
+          "title": "Pizza World",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        }
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "title": "Chicken Feast",
+    "products": "Fried Chicken - Wings - Nuggets - Coleslaw - Sides",
+    "rating": 4.6,
+    "deliveryTime": "35 min",
+    "deliveryFee": "Free",
+    "image_url": "https://plus.unsplash.com/premium_photo-1723575734758-97e6e862a670?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Q2hpY2tlbiUyMEZlYXN0fGVufDB8fDB8fHww",
+    "restaurantDetails": "A paradise for chicken lovers, Chicken Feast serves crispy fried chicken, wings, and nuggets with delicious sides.",
+    "categories": {
+      "Fried Chicken": [
+        {
+          "name": "Original Recipe",
+          "price": "$10.99",
+          "rating": 4.5,
+          "description": "Signature recipe",
+          "title": "Chicken Feast",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        },
+        {
+          "name": "Spicy Recipe",
+          "price": "$11.49",
+          "rating": 4.5,
+          "description": "Spicy flavor",
+          "title": "Chicken Feast",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        },
+        {
+          "name": "Extra Crispy",
+          "price": "$12.49",
+          "rating": 4.5,
+          "description": "Extra crispy",
+          "title": "Chicken Feast",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        },
+        {
+          "name": "Garlic Parmesan",
+          "price": "$12.99",
+          "rating": 4.5,
+          "description": "Garlic and parmesan",
+          "title": "Chicken Feast",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        }
+      ],
+      "Wings": [
+        {
+          "name": "Buffalo Wings",
+          "price": "$8.99",
+          "rating": 4.5,
+          "description": "Spicy buffalo wings",
+          "title": "Chicken Feast",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        },
+        {
+          "name": "BBQ Wings",
+          "price": "$9.49",
+          "rating": 4.5,
+          "description": "Sweet BBQ wings",
+          "title": "Chicken Feast",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        },
+        {
+          "name": "Honey Garlic Wings",
+          "price": "$9.99",
+          "rating": 4.5,
+          "description": "Sweet and savory wings",
+          "title": "Chicken Feast",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        },
+        {
+          "name": "Lemon Pepper Wings",
+          "price": "$9.49",
+          "rating": 4.5,
+          "description": "Lemon pepper seasoning",
+          "title": "Chicken Feast",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        }
+      ],
+      "Nuggets": [
+        {
+          "name": "Classic Nuggets",
+          "price": "$5.99",
+          "rating": 4.5,
+          "description": "Crispy chicken nuggets",
+          "title": "Chicken Feast",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        },
+        {
+          "name": "Spicy Nuggets",
+          "price": "$6.49",
+          "rating": 4.5,
+          "description": "Spicy nuggets",
+          "title": "Chicken Feast",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        },
+        {
+          "name": "Buffalo Nuggets",
+          "price": "$6.99",
+          "rating": 4.5,
+          "description": "Buffalo-flavored nuggets",
+          "title": "Chicken Feast",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        }
+      ],
+      "Coleslaw": [
+        {
+          "name": "Creamy Coleslaw",
+          "price": "$2.99",
+          "rating": 4.5,
+          "description": "Smooth and creamy",
+          "title": "Chicken Feast",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        },
+        {
+          "name": "Tangy Coleslaw",
+          "price": "$3.49",
+          "rating": 4.5,
+          "description": "Zesty and tangy",
+          "title": "Chicken Feast",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        }
+      ],
+      "Sides": [
+        {
+          "name": "Mashed Potatoes",
+          "price": "$3.99",
+          "rating": 4.5,
+          "description": "Smooth mashed potatoes",
+          "title": "Chicken Feast",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        },
+        {
+          "name": "Corn on the Cob",
+          "price": "$2.99",
+          "rating": 4.5,
+          "description": "Buttery corn on the cob",
+          "title": "Chicken Feast",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        },
+        {
+          "name": "French Fries",
+          "price": "$4.49",
+          "rating": 4.5,
+          "description": "Crispy golden fries",
+          "title": "Chicken Feast",
+          "deliveryTime": "30 min",
+          "deliveryFee": "Free",
+          "longDescription": "Enjoy freshly made pasta dishes, signature salads, and warm breadsticks at Pasta Haven, known for its family-friendly atmosphere.",
+          "size": ["10*", "20*", "30*", "40*"],
+          "image_url": "https://images.unsplash.com/photo-1666830497572-5a9c548e0b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1"
+        }
+      ]
+    }
+  },
+   {
+    "id": 4,
+    "title": "Taco Fiesta",
+    "products": "Tacos - Burritos - Nachos - Quesadillas - Salsa - Guacamole",
+    "rating": 4.7,
+    "deliveryTime": "20 min",
+    "deliveryFee": "Free",
+    "image_url": "https://images.unsplash.com/photo-1604045816710-e2b7b54d61e5?w=500&auto=format&fit=crop&q=60",
+    "restaurantDetails": "Taco Fiesta serves up delicious, flavorful Mexican dishes with fresh ingredients and a variety of toppings.",
+    "categories": {
+      "Tacos": [
+        { "name": "Beef Taco", "price": "$3.99", "description": "Seasoned beef taco" },
+        { "name": "Chicken Taco", "price": "$3.49", "description": "Grilled chicken taco" },
+        { "name": "Fish Taco", "price": "$4.49", "description": "Crispy fish taco" },
+        { "name": "Veggie Taco", "price": "$3.29", "description": "Fresh veggie taco" }
+      ],
+      "Burritos": [
+        { "name": "Beef Burrito", "price": "$8.99", "description": "Beef and rice wrapped in a tortilla" },
+        { "name": "Chicken Burrito", "price": "$7.99", "description": "Chicken and rice burrito" },
+        { "name": "Vegetarian Burrito", "price": "$7.49", "description": "Veggie burrito" }
+      ],
+      "Nachos": [
+        { "name": "Cheese Nachos", "price": "$5.99", "description": "Tortilla chips with melted cheese" },
+        { "name": "Beef Nachos", "price": "$6.99", "description": "Nachos topped with seasoned beef" }
+      ],
+      "Quesadillas": [
+        { "name": "Chicken Quesadilla", "price": "$6.49", "description": "Chicken and cheese quesadilla" },
+        { "name": "Cheese Quesadilla", "price": "$5.49", "description": "Classic cheese quesadilla" }
+      ],
+      "Sides": [
+        { "name": "Guacamole", "price": "$2.99", "description": "Creamy guacamole" },
+        { "name": "Salsa", "price": "$1.99", "description": "Fresh salsa" }
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "title": "Pasta Paradise",
+    "products": "Pasta - Pizza - Lasagna - Salads - Desserts",
+    "rating": 4.8,
+    "deliveryTime": "30 min",
+    "deliveryFee": "$1.50",
+    "image_url": "https://images.unsplash.com/photo-1605865932647-84cd7d945f64?w=500&auto=format&fit=crop&q=60",
+    "restaurantDetails": "Pasta Paradise is your destination for homemade pasta dishes, cheesy lasagna, and fresh salads.",
+    "categories": {
+      "Pasta": [
+        { "name": "Spaghetti Carbonara", "price": "$12.99", "description": "Spaghetti with creamy carbonara sauce" },
+        { "name": "Penne Arrabbiata", "price": "$11.49", "description": "Spicy tomato sauce with penne" },
+        { "name": "Fettuccine Alfredo", "price": "$13.49", "description": "Creamy Alfredo sauce on fettuccine" }
+      ],
+      "Pizza": [
+        { "name": "Margherita Pizza", "price": "$11.99", "description": "Classic Margherita pizza" },
+        { "name": "Pepperoni Pizza", "price": "$13.49", "description": "Pepperoni pizza" }
+      ],
+      "Lasagna": [
+        { "name": "Classic Lasagna", "price": "$14.99", "description": "Layered beef lasagna" },
+        { "name": "Vegetarian Lasagna", "price": "$13.99", "description": "Vegetarian-friendly lasagna" }
+      ],
+      "Salads": [
+        { "name": "Caesar Salad", "price": "$6.99", "description": "Crisp lettuce with Caesar dressing" },
+        { "name": "Greek Salad", "price": "$7.49", "description": "Greek style salad with feta" }
+      ],
+      "Desserts": [
+        { "name": "Tiramisu", "price": "$5.99", "description": "Italian coffee-flavored dessert" },
+        { "name": "Cannoli", "price": "$3.99", "description": "Crispy pastry filled with sweet cream" }
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "title": "Sushi Bar",
+    "products": "Sushi - Sashimi - Rolls - Tempura - Soup",
+    "rating": 4.9,
+    "deliveryTime": "25 min",
+    "deliveryFee": "Free",
+    "image_url": "https://images.unsplash.com/photo-1579151413690-74266d3be01b?w=500&auto=format&fit=crop&q=60",
+    "restaurantDetails": "Authentic Japanese sushi and sashimi made with the finest fresh fish and ingredients.",
+    "categories": {
+      "Sushi": [
+        { "name": "California Roll", "price": "$8.99", "description": "Classic California roll" },
+        { "name": "Tuna Roll", "price": "$9.49", "description": "Fresh tuna sushi roll" },
+        { "name": "Salmon Roll", "price": "$9.99", "description": "Fresh salmon sushi roll" }
+      ],
+      "Sashimi": [
+        { "name": "Tuna Sashimi", "price": "$12.99", "description": "Fresh tuna slices" },
+        { "name": "Salmon Sashimi", "price": "$13.49", "description": "Fresh salmon slices" }
+      ],
+      "Rolls": [
+        { "name": "Dragon Roll", "price": "$14.49", "description": "Shrimp tempura with avocado and eel" },
+        { "name": "Rainbow Roll", "price": "$15.99", "description": "Assorted fish on top of a California roll" }
+      ],
+      "Tempura": [
+        { "name": "Shrimp Tempura", "price": "$7.99", "description": "Crispy shrimp tempura" },
+        { "name": "Vegetable Tempura", "price": "$6.49", "description": "Crispy vegetable tempura" }
+      ],
+      "Soup": [
+        { "name": "Miso Soup", "price": "$2.99", "description": "Traditional miso soup" },
+        { "name": "Seaweed Soup", "price": "$3.49", "description": "Soup with seaweed and tofu" }
+      ]
+    }
+  },
+  {
+    "id": 7,
+    "title": "Vegan Delights",
+    "products": "Vegan Burgers - Salads - Wraps - Smoothies - Desserts",
+    "rating": 4.7,
+    "deliveryTime": "20 min",
+    "deliveryFee": "Free",
+    "image_url": "https://images.unsplash.com/photo-1603320046545-c9abf945c024?w=500&auto=format&fit=crop&q=60",
+    "restaurantDetails": "A haven for plant-based food lovers, offering vegan burgers, wraps, and smoothies.",
+    "categories": {
+      "Vegan Burgers": [
+        { "name": "Classic Vegan Burger", "price": "$9.99", "description": "Plant-based patty with lettuce and tomato" },
+        { "name": "BBQ Vegan Burger", "price": "$10.49", "description": "BBQ sauce and vegan cheese" }
+      ],
+      "Salads": [
+        { "name": "Vegan Caesar Salad", "price": "$7.99", "description": "Plant-based Caesar dressing" },
+        { "name": "Quinoa Salad", "price": "$8.49", "description": "Healthy quinoa and veggies" }
+      ],
+      "Wraps": [
+        { "name": "Vegan Wrap", "price": "$8.99", "description": "Veggies and hummus in a wrap" },
+        { "name": "Spicy Vegan Wrap", "price": "$9.49", "description": "Spicy veggies with vegan mayo" }
+      ],
+      "Smoothies": [
+        { "name": "Berry Blast Smoothie", "price": "$5.49", "description": "Mixed berry smoothie" },
+        { "name": "Green Smoothie", "price": "$5.99", "description": "Spinach, banana, and almond milk" }
+      ],
+      "Desserts": [
+        { "name": "Vegan Chocolate Cake", "price": "$4.49", "description": "Delicious plant-based chocolate cake" },
+        { "name": "Vegan Cookies", "price": "$3.49", "description": "Freshly baked vegan cookies" }
+      ]
+    }
+  },
+  {
+    "id": 8,
+    "title": "Burgers & Shakes",
+    "products": "Burgers - Milkshakes - Fries - Onion Rings - Salads",
+    "rating": 4.4,
+    "deliveryTime": "30 min",
+    "deliveryFee": "$2.00",
+    "image_url": "https://images.unsplash.com/photo-1622101468328-36c69903d362?w=500&auto=format&fit=crop&q=60",
+    "restaurantDetails": "Burgers & Shakes offers mouthwatering burgers and thick milkshakes, perfect for a satisfying meal.",
+    "categories": {
+      "Burgers": [
+        { "name": "Cheeseburger", "price": "$8.49", "description": "Classic cheeseburger with lettuce and tomato" },
+        { "name": "Double Cheeseburger", "price": "$9.99", "description": "Two patties with cheese" }
+      ],
+      "Milkshakes": [
+        { "name": "Vanilla Milkshake", "price": "$4.49", "description": "Creamy vanilla shake" },
+        { "name": "Chocolate Milkshake", "price": "$4.99", "description": "Rich chocolate milkshake" }
+      ],
+      "Fries": [
+        { "name": "French Fries", "price": "$3.49", "description": "Crispy golden fries" },
+        { "name": "Onion Rings", "price": "$4.99", "description": "Crispy onion rings" }
+      ],
+      "Salads": [
+        { "name": "Caesar Salad", "price": "$5.99", "description": "Crisp romaine with Caesar dressing" },
+        { "name": "Garden Salad", "price": "$4.99", "description": "Mixed greens with vinaigrette" }
+      ]
+    }
+  },
+  {
+    "id": 9,
+    "title": "Pasta Express",
+    "products": "Pasta - Garlic Bread - Soups - Salads - Desserts",
+    "rating": 4.6,
+    "deliveryTime": "25 min",
+    "deliveryFee": "$1.00",
+    "image_url": "https://images.unsplash.com/photo-1611612610662-2736182fbb94?w=500&auto=format&fit=crop&q=60",
+    "restaurantDetails": "Pasta Express offers a variety of delicious pasta dishes along with fresh garlic bread and savory soups.",
+    "categories": {
+      "Pasta": [
+        { "name": "Spaghetti Bolognese", "price": "$10.99", "description": "Classic spaghetti with meat sauce" },
+        { "name": "Penne Alfredo", "price": "$11.49", "description": "Creamy Alfredo sauce" }
+      ],
+      "Garlic Bread": [
+        { "name": "Cheesy Garlic Bread", "price": "$4.99", "description": "Garlic bread with melted cheese" }
+      ],
+      "Soups": [
+        { "name": "Tomato Soup", "price": "$3.99", "description": "Rich and creamy tomato soup" },
+        { "name": "Minestrone Soup", "price": "$4.49", "description": "Italian vegetable soup" }
+      ],
+      "Salads": [
+        { "name": "Caesar Salad", "price": "$5.99", "description": "Crisp lettuce with Caesar dressing" }
+      ],
+      "Desserts": [
+        { "name": "Chocolate Cake", "price": "$3.99", "description": "Rich chocolate cake" },
+        { "name": "Tiramisu", "price": "$4.49", "description": "Italian classic dessert" }
+      ]
+    }
+  },
+  {
+    "id": 10,
+    "title": "Fried Chicken Factory",
+    "products": "Fried Chicken - Wings - Sides - Coleslaw - Desserts",
+    "rating": 4.8,
+    "deliveryTime": "30 min",
+    "deliveryFee": "$2.00",
+    "image_url": "https://images.unsplash.com/photo-1599350616122-9755ea77c604?w=500&auto=format&fit=crop&q=60",
+    "restaurantDetails": "Fried Chicken Factory specializes in crispy fried chicken, wings, and delicious sides.",
+    "categories": {
+      "Fried Chicken": [
+        { "name": "Original Fried Chicken", "price": "$9.99", "description": "Classic crispy fried chicken" },
+        { "name": "Spicy Fried Chicken", "price": "$10.49", "description": "Spicy crispy chicken" }
+      ],
+      "Wings": [
+        { "name": "Buffalo Wings", "price": "$8.99", "description": "Spicy buffalo wings" },
+        { "name": "BBQ Wings", "price": "$9.49", "description": "Sweet BBQ wings" }
+      ],
+      "Sides": [
+        { "name": "Mashed Potatoes", "price": "$3.99", "description": "Smooth mashed potatoes" },
+        { "name": "French Fries", "price": "$4.49", "description": "Golden crispy fries" }
+      ],
+      "Coleslaw": [
+        { "name": "Tangy Coleslaw", "price": "$2.99", "description": "Tangy and fresh" }
+      ],
+      "Desserts": [
+        { "name": "Apple Pie", "price": "$3.99", "description": "Freshly baked apple pie" }
+      ]
+    }
+  }
+]

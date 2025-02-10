@@ -21,25 +21,27 @@ export enum COLOR {
   ASHEN_BROWN = "#391400",
 
   // Background Color
-
   BACKGROUND_PRIMARY = "#FFFFFF", // Default app background
   BACKGROUND_SECONDARY = "#f0f5fa", // Light secondary backgrounds
+  BACKGROUND_TERTIARY = "#F6F8FA",
   BACKGROUND_ACCENT = "#ECF0F4", // Special sections or highlighted areas
   BACKGROUND_DARK = "#121212", // Dark mode primary background
-  BACKGROUND_LIGHT = "#F0F0F0", // Light background
+  BACKGROUND_LIGHT = "#F6F6F6", // Light background
   CARD_BACKGROUND = "#FAFAFA", // Cards and container backgrounds
   ERROR_BACKGROUND = "#FFE4E6", // Error states
   SUCCESS_BACKGROUND = "#E8F5E9", // Success messages
   WARNING_BACKGROUND = "#FFF4E5", // Warnings
+  CIRCLE_BACKGROUND = "#ffc6ae",
 
   // Text Color
   TEXT_PRIMARY = "#32343E",
   TEXT_SECONDARY = "#646982",
-  TEXT_TERTIARY = "#5A5252",
-  TEXT_QUATERNARY = "#808080",
+  TEXT_TERTIARY = "#181C2E",
+  TEXT_QUATERNARY = "#A0A5BA",
   TEXT_LIGHT_GRAY = "#A6A6A6",
   TEXT_WHITE = "#FFFFFF",
   TEXT_BLACK = "#000000",
+  TEXT_PLACEHOLDER = "#676767",
 
   // Status Colors
   ERROR = "#FF4D4D",
@@ -51,6 +53,8 @@ export enum COLOR {
   FACEBOOK = "#395998",
   TWITTER = "#169ce8",
   APPLE_LOGO = "#1b1f2f",
+  LOCATION_LOGO = "#ff914e",
+  ARROW_LOGO = "#747783",
 
   // Transparency and Special Colors
   TRANSPARENT = "transparent",

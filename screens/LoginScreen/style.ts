@@ -1,11 +1,13 @@
 import { BORDER_RADIOUS, COLOR, FONT_SIZE, FONT_WEIGHT } from "@/theme";
 import { Pressable, Text, TextInput } from "react-native";
 import styled from "styled-components/native";
+import LottieView from "lottie-react-native";
 
 export const Container = styled.View`
   flex: 1;
   justify-content: space-between;
   background-color: ${COLOR.SECONDARY};
+  position: relative;
 `;
 
 export const TextContainer = styled.View`

@@ -1,19 +1,22 @@
+import React, { useState } from "react";
 import {
   View,
   Pressable,
   KeyboardAvoidingView,
   ScrollView,
   Platform,
+  TouchableWithoutFeedback,
+  Keyboard,
+  Alert,
 } from "react-native";
-import React, { useState } from "react";
+import { useNavigation } from "@react-navigation/native";
+import Ionicon from "@expo/vector-icons/Ionicons";
+import { Formik } from "formik";
+import { ValidationSchema } from "@/validations/formValidation";
 import {
   BackPressableButton,
   PressableButtonNext,
 } from "@/components/common/Buttons/Button";
-import Ionicon from "@expo/vector-icons/Ionicons";
-import { useNavigation } from "@react-navigation/native";
-import { Formik } from "formik";
-import { ValidationSchema } from "@/validations/formValidation";
 import {
   BackPressableButtonContainer,
   ButtonContainer,
@@ -32,6 +35,7 @@ import {
 } from "@/components/common/Texts/Text";
 import { ErrorText } from "@/components/common/ErrorMessagetext/ErrorMessageText";
 import { Input, Input1 } from "@/components/common/Inputs/Inputs";
+import axios from "axios";
 
 const SignUpScreen = () => {
   const navigation = useNavigation();
@@ -41,18 +45,41 @@ const SignUpScreen = () => {
   const togglePasswordVisibility = () => setShowPassword(!showPassword);
   const togglePasswordVisibility2 = () => setShowRePassword(!showRePassword);
 
-  const handleSignUp = (values: any) => {
-    console.log("Form Submitted:", values);
-  };
+  const handleSignUp = async (values: any) => {
+    try {
+      const { name, email, password } = values;
+      const response = await axios.post("http://192.168.1.170:4000/register", {
+        name,
+        email,
+        password,
+      });
 
+      if (response.data.status === "ok") {
+        Alert.alert("Registered successfully");
+        navigation.navigate("Login");
+      } else {
+       const errorMessage =
+         typeof response.data === "string"
+           ? response.data
+           : JSON.stringify(response.data);
+
+       Alert.alert("Registration Failed", errorMessage);
+      }
+    } catch (error) {
+      console.error("Sign Up Error", error);
+      Alert.alert("Error", "An unexpected error occurred");
+    }
+  };
   return (
+    <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
       <KeyboardAvoidingView
         style={{ flex: 1 }}
         behavior={Platform.OS === "ios" ? "padding" : "height"}
-        keyboardVerticalOffset={Platform.OS === "ios" ? 60 : 0}
+        keyboardVerticalOffset={Platform.OS === "ios" ? 80 : 0}
       >
         <ScrollView
           contentContainerStyle={{ flexGrow: 1 }}
+          overScrollMode="never"
           showsVerticalScrollIndicator={false}
         >
           <Container>
@@ -92,11 +119,12 @@ const SignUpScreen = () => {
                 touched,
               }) => (
                 <ButtonContainer>
+                  {/* <View
+                    style={{ paddingBottom: 20, width: "100%", height: "100%" }}
+                  > */}
                   <InputContainer>
                     <SubInputContainer>
-                      <View style={{ alignSelf: "flex-start" }}>
-                        <LabelText>NAME</LabelText>
-                      </View>
+                      <LabelText>NAME</LabelText>
                       <Input
                         placeholder="John Doe"
                         onChangeText={handleChange("name")}
@@ -108,9 +136,7 @@ const SignUpScreen = () => {
                       )}
                     </SubInputContainer>
                     <SubInputContainer>
-                      <View style={{ alignSelf: "flex-start" }}>
-                        <LabelText>EMAIL</LabelText>
-                      </View>
+                      <LabelText>EMAIL</LabelText>
                       <Input
                         placeholder="email@example.com"
                         onChangeText={handleChange("email")}
@@ -123,9 +149,7 @@ const SignUpScreen = () => {
                       )}
                     </SubInputContainer>
                     <SubInputContainer>
-                      <View style={{ alignSelf: "flex-start" }}>
-                        <LabelText>PASSWORD</LabelText>
-                      </View>
+                      <LabelText>PASSWORD</LabelText>
                       <PasswordInputContainer>
                         <Input1
                           placeholder="*  *  *  *  *  *  *  *  *"
@@ -149,9 +173,7 @@ const SignUpScreen = () => {
                       )}
                     </SubInputContainer>
                     <SubInputContainer>
-                      <View style={{ alignSelf: "flex-start" }}>
-                        <LabelText>RE-TYPE PASSWORD</LabelText>
-                      </View>
+                      <LabelText>RE-TYPE PASSWORD</LabelText>
                       <PasswordInputContainer>
                         <Input1
                           placeholder="*  *  *  *  *  *  *  *  *"
@@ -178,12 +200,14 @@ const SignUpScreen = () => {
                   <PressableButtonNext onPress={handleSubmit}>
                     <PressableButtonNextText>SIGN UP</PressableButtonNextText>
                   </PressableButtonNext>
+                  {/* </View> */}
                 </ButtonContainer>
               )}
             </Formik>
           </Container>
         </ScrollView>
       </KeyboardAvoidingView>
+    </TouchableWithoutFeedback>
   );
 };
 
