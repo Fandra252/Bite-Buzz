@@ -46,7 +46,7 @@ export const ButtonContainer = styled.View`
 `;
 
 export const InputContainer = styled.View`
-  width: 327px;
+  width: 80%;
   align-items: center;
   margin-top: 20px;
 `;

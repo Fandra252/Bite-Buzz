@@ -197,9 +197,12 @@ const SignUpScreen = () => {
                       )}
                     </SubInputContainer>
                   </InputContainer>
+                  <View style={{width: "80%"}}>
+
                   <PressableButtonNext onPress={handleSubmit}>
                     <PressableButtonNextText>SIGN UP</PressableButtonNextText>
                   </PressableButtonNext>
+                  </View>
                   {/* </View> */}
                 </ButtonContainer>
               )}

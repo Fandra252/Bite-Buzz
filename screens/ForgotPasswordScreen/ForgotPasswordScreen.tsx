@@ -89,18 +89,21 @@ const ForgotPasswordScreen = () => {
                 />
               </SubInputContainer>
             </InputContainer>
+            <View style={{width: "80%"}}>
+
             <PressableButtonNext onPress={sendOtp}>
               {loading ? (
                 <LottieView
-                  source={loadingAnimation}
-                  style={{ width: "200%", height: "200%" }}
-                  autoPlay
-                  loop
+                source={loadingAnimation}
+                style={{ width: "200%", height: "200%" }}
+                autoPlay
+                loop
                 />
               ) : (
                 <PressableButtonNextText>SEND CODE</PressableButtonNextText>
               )}
             </PressableButtonNext>
+              </View>
           </ButtonContainer>
         </Container>
       </ScrollView>

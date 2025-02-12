@@ -13,7 +13,7 @@ export const TopContainer = styled.View`
   background-color: ${COLOR.SECONDARY};
   flex-direction: column;
   justify-content: space-between;
-  padding-top: 30px;
+  /* padding-top: 30px; */
 `;
 
 export const BackPressableButtonContainer = styled.View`
@@ -45,7 +45,7 @@ export const ButtonContainer = styled.View`
 `;
 
 export const InputContainer = styled.View`
-  width: 327px;
+  width: 80%;
   align-items: center;
   margin-top: 20px;
 `;

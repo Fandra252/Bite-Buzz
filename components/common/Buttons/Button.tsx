@@ -1,9 +1,9 @@
-import { BORDER_RADIOUS, COLOR } from "@/theme";
+import { BORDER_RADIOUS, COLOR, SIZE_PERCENT } from "@/theme";
 import { Pressable } from "react-native";
 import styled from "styled-components/native";
 
 export const PressableButtonNext = styled(Pressable)`
-  width: 327px;
+  width: ${SIZE_PERCENT.P100};
   height: 62px;
   background-color: ${COLOR.PRIMARY};
   padding: 10px;
@@ -15,7 +15,7 @@ export const PressableButtonNext = styled(Pressable)`
 `;
 
 export const PressableButtonSkip = styled(Pressable)`
-  width: 327px;
+  width: 80%;
   height: 62px;
   background-color: ${COLOR.WHITE};
   padding: 10px;

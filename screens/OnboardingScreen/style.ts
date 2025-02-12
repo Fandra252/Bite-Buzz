@@ -6,6 +6,8 @@ export const ViewContainer = styled.View`
   flex: 1;
   background-color: ${COLOR.WHITE};
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 export const SlideContainerImage = styled(Image)`
   width: 350px;
@@ -41,7 +43,8 @@ export const SlideView = styled.View`
 `;
 
 export const ButtonViewContainer = styled.View`
-  flex-direction: column;
+  width: 100%;
+  /* flex-direction: column; */
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;

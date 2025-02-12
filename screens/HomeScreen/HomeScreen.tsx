@@ -225,6 +225,7 @@ const HomeScreen: React.FC = () => {
            renderItem={renderSlide}
            horizontal
            showsHorizontalScrollIndicator={false}
+           overScrollMode="never"
          />
        </FlatlistContainer>
        <CategoriesContainer>
@@ -246,6 +247,7 @@ const HomeScreen: React.FC = () => {
            data={data}
            renderItem={renderSlide2}
            showsVerticalScrollIndicator={false}
+           overScrollMode="never"
          />
        </RestaurantsFlatlistContainer>
      </Container>

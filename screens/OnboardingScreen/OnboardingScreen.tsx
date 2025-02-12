@@ -51,7 +51,7 @@ const slides = [
 
 export default function OnBoardingScreen() {
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
-  const ref = useRef(null);
+  const ref = useRef<FlatList>(null);
   const navigation = useNavigation();
 
   interface UpdateCurrentSlideIndexEvent {
@@ -74,6 +74,7 @@ export default function OnBoardingScreen() {
     return (
       <View
         style={{
+          width: '80%',
           height: height * 0.28,
           justifyContent: "space-between",
           paddingBottom: 30,
@@ -106,7 +107,7 @@ export default function OnBoardingScreen() {
               </PressableButtonNext>
             </GetStartedViewContainer>
           ) : (
-            <View>
+            <View style={{width: "100%", justifyContent: "center",alignItems:"center"}}>
               <PressableButtonNext onPress={goNextSlide}>
                 <PressableButtonNextText>NEXT</PressableButtonNextText>
               </PressableButtonNext>

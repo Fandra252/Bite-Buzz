@@ -20,16 +20,20 @@ import {
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { COLOR } from "@/theme";
 import { BackPressableButton2 } from "@/components/common/Buttons/Button";
-import { useNavigation } from "@react-navigation/native";
+import { useNavigation, NavigationProp } from "@react-navigation/native";
+import { RootStackParamList } from "@/types";
 import axios from "axios";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-
+import { useFocusEffect } from "@react-navigation/native";
+import { useCallback } from "react";
+import { Image } from "react-native";
 const ProfileScreen = () => {
-  const navigation = useNavigation();
+  const navigation = useNavigation<NavigationProp<RootStackParamList>>();
  const [userData, setUserData] = useState<{
    name?: string;
    bio?: string;
    image?: string;
+   profilePic?: string;
  } | null>(null);
 
 
@@ -52,9 +56,11 @@ const ProfileScreen = () => {
       console.log("Error retrieving data" + e);
     }
   }
-  useEffect(() => {
-    getData();
-  }, []);
+  useFocusEffect(
+     useCallback(() => {
+       getData();
+     }, [])
+   );
 
   async function signOut() {
     try {
@@ -83,8 +89,17 @@ const ProfileScreen = () => {
       </HeaderContainer>
       <ProfileContainer>
         <ImageConatiner>
-          {userData?.image ?? (
-            <Ionicons name="person-outline" color="white" size={64}></Ionicons>
+          {userData?.profilePic ? (
+            <Image
+              source={{ uri: userData.profilePic }}
+              style={{
+                width: 100,
+                height: 100,
+                borderRadius: 50,
+              }}
+            />
+          ) : (
+            <Ionicons name="person-outline" size={64} color="#ffffff" />
           )}
         </ImageConatiner>
         <ProfilTitleContainer>
@@ -95,7 +110,9 @@ const ProfileScreen = () => {
         </ProfilTitleContainer>
       </ProfileContainer>
       <DetailsContainer>
-        <SubDetailsContainer>
+        <SubDetailsContainer
+          onPress={() => navigation.navigate("PersonalInfoScreen")}
+        >
           <DetailsTitlesContainer>
             <LogoContainer>
               <Ionicons

@@ -42,6 +42,10 @@ export enum COLOR {
   TEXT_WHITE = "#FFFFFF",
   TEXT_BLACK = "#000000",
   TEXT_PLACEHOLDER = "#676767",
+  TEXT_ERROR = "#FF4D4D",
+  TEXT_SUCCESS = "#4CAF50",
+  TEXT_WARNING = "#FFC107",
+  TEXT_INFO = "#6B6E82",
 
   // Status Colors
   ERROR = "#FF4D4D",

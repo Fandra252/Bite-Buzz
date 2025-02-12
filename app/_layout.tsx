@@ -21,6 +21,8 @@ import LocationScreen from "@/screens/LocationScreen/LocationScreen";
 import HomeScreen from "@/screens/HomeScreen/HomeScreen";
 import ResetPasswordScreen from "@/screens/ResetPasswordScreen/ResetPasswordScreen";
 import ProfileScreen from "@/screens/ProfileScreen/ProfileScreen";
+import PersonalInfoScreen from "@/screens/PersonalInfoScreen/PersonalInfoScreen";
+import EditProfileScreen from "@/screens/EditProfileScreen/EditProfileScreen";
 
 export default function RootLayout() {
   const colorScheme = useColorScheme();
@@ -101,6 +103,16 @@ export default function RootLayout() {
         <Stack.Screen
           name="ProfileScreen"
           component={ProfileScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="PersonalInfoScreen"
+          component={PersonalInfoScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="EditProfileScreen"
+          component={EditProfileScreen}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>

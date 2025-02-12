@@ -1,5 +1,5 @@
 export enum LINE_HEIGHT {
-  extraTight = "1.0", // 16px
+  extraTight = "16px", // 16px
   tight = "19px", // 19.2px
   normal = "24px", // 24px
   relaxed = "1.8", // 28.8px

@@ -5,6 +5,7 @@ import {
   ScrollView,
   TextInput,
   Alert,
+  View,
 } from "react-native";
 import Ionicon from "@expo/vector-icons/Ionicons";
 import { useNavigation, useRoute } from "@react-navigation/native";
@@ -44,7 +45,7 @@ const VerificationScreen = () => {
   const [timer, setTimer] = useState(50);
   const [canResend, setCanResend] = useState(false);
 
-  const handleChange = (text : any, index : any) => {
+  const handleChange = (text: any, index: any) => {
     if (/^\d?$/.test(text)) {
       const updatedOtp = [...otp];
       updatedOtp[index] = text;
@@ -156,9 +157,11 @@ const VerificationScreen = () => {
                 </MultiInputContainer>
               </SubInputContainer>
             </InputContainer>
-            <PressableButtonNext onPress={verifyOtp}>
-              <PressableButtonNextText>VERIFY</PressableButtonNextText>
-            </PressableButtonNext>
+            <View style={{ width: "80%" }}>
+              <PressableButtonNext onPress={verifyOtp}>
+                <PressableButtonNextText>VERIFY</PressableButtonNextText>
+              </PressableButtonNext>
+            </View>
           </ButtonContainer>
         </Container>
       </ScrollView>

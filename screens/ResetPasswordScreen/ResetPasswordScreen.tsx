@@ -170,11 +170,13 @@ const ResetPasswordScreen = () => {
                     )}
                   </SubInputContainer>
                 </InputContainer>
-                <PressableButtonNext onPress={handleSubmit}>
-                  <PressableButtonNextText>
-                    RESET PASSWORD
-                  </PressableButtonNextText>
-                </PressableButtonNext>
+                <View style={{ width: "80%" }}>
+                  <PressableButtonNext onPress={handleSubmit}>
+                    <PressableButtonNextText>
+                      RESET PASSWORD
+                    </PressableButtonNextText>
+                  </PressableButtonNext>
+                </View>
               </ButtonContainer>
             )}
           </Formik>

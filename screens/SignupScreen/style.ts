@@ -6,7 +6,7 @@ export const Container = styled.View`
   height: 100%;
   justify-content: space-between;
   background-color: ${COLOR.SECONDARY};
-  padding-top: 30px;
+  /* padding-top: 30px; */
 `;
 
 export const TopContainer = styled.View`
@@ -45,7 +45,7 @@ export const ButtonContainer = styled.View`
 `;
 
 export const InputContainer = styled.View`
-  width: 327px;
+  width: 80%;
   align-items: center;
   margin-bottom: 20px;
 `;

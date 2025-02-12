@@ -213,10 +213,11 @@ const LoginScreen = () => {
                   </Pressable>
                 </ForgotPasswordContainer>
               </InputContainer>
-
-              <PressableButtonNext onPress={handleSubmit}>
-                <PressableButtonNextText>LOG IN</PressableButtonNextText>
-              </PressableButtonNext>
+              <View style={{width: "80%"}}>
+                <PressableButtonNext onPress={handleSubmit}>
+                  <PressableButtonNextText>LOG IN</PressableButtonNextText>
+                </PressableButtonNext>
+              </View>
 
               <View
                 style={{
