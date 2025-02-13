@@ -10,19 +10,20 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useColorScheme } from "@/hooks/useColorScheme";
 import { StatusBar } from "react-native";
 import { useEffect, useState } from "react";
-
-import SplashScreen from "@/screens/SplashScreen/SplashScreen";
-import OnBoardingScreen from "@/screens/OnboardingScreen/OnboardingScreen";
-import LoginScreen from "@/screens/LoginScreen/LoginScreen";
-import SignUpScreen from "@/screens/SignupScreen/SignupScreen";
-import ForgotPasswordScreen from "@/screens/ForgotPasswordScreen/ForgotPasswordScreen";
-import VerificationScreen from "@/screens/VerificationScreen/VerificationScreen";
-import LocationScreen from "@/screens/LocationScreen/LocationScreen";
-import HomeScreen from "@/screens/HomeScreen/HomeScreen";
-import ResetPasswordScreen from "@/screens/ResetPasswordScreen/ResetPasswordScreen";
-import ProfileScreen from "@/screens/ProfileScreen/ProfileScreen";
-import PersonalInfoScreen from "@/screens/PersonalInfoScreen/PersonalInfoScreen";
-import EditProfileScreen from "@/screens/EditProfileScreen/EditProfileScreen";
+import {
+  SplashScreen,
+  IntroScreen,
+  LoginScreen,
+  SignUpScreen,
+  ForgotPasswordScreen,
+  VerificationScreen,
+  LocationScreen,
+  HomeScreen,
+  ResetPasswordScreen,
+  ProfileScreen,
+  PersonalInfoScreen,
+  EditProfileScreen,
+} from "@/screens";
 
 export default function RootLayout() {
   const colorScheme = useColorScheme();
@@ -61,8 +62,8 @@ export default function RootLayout() {
           options={{ headerShown: false }}
         />
         <Stack.Screen
-          name="OnBoardingScreen"
-          component={OnBoardingScreen}
+          name="IntroScreen"
+          component={IntroScreen}
           options={{ headerShown: false }}
         />
         <Stack.Screen

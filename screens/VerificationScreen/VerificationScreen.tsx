@@ -34,9 +34,15 @@ import {
   Title,
 } from "@/components/common/Texts/Text";
 import { Input3 } from "@/components/common/Inputs/Inputs";
+import { StackNavigationProp } from "@react-navigation/stack";
+import { RootStackParamList } from "@/types";
 
-const VerificationScreen = () => {
-  const navigation = useNavigation();
+type VerificationScreenNavigationProp = StackNavigationProp<
+  RootStackParamList
+>;
+
+export const VerificationScreen = () => {
+  const navigation = useNavigation<VerificationScreenNavigationProp>();
   const route = useRoute();
   const { email } = route.params;
 
@@ -143,13 +149,13 @@ const VerificationScreen = () => {
                     <Input3
                       key={index}
                       value={value}
-                      onChangeText={(text) => handleChange(text, index)}
-                      onKeyPress={({ nativeEvent }) =>
+                      onChangeText={(text: any) => handleChange(text, index)}
+                      onKeyPress={({ nativeEvent }: { nativeEvent: any }) =>
                         handleKeyPress(nativeEvent.key, index)
                       }
                       keyboardType="numeric"
                       maxLength={1}
-                      ref={(ref) => {
+                      ref={(ref : any) => {
                         if (ref) inputRefs.current[index] = ref;
                       }}
                     />
@@ -169,4 +175,3 @@ const VerificationScreen = () => {
   );
 };
 
-export default VerificationScreen;

@@ -35,9 +35,15 @@ import {
 } from "@/components/common/Texts/Text";
 import { Input1 } from "@/components/common/Inputs/Inputs";
 import { ErrorText } from "@/components/common/ErrorMessagetext/ErrorMessageText";
+import { StackNavigationProp } from "@react-navigation/stack";
+import { RootStackParamList } from "@/types";
+import { ResetPasswordScreenvalidationSchema } from "@/validations/formValidation";
 
-const ResetPasswordScreen = () => {
-  const navigation = useNavigation();
+type ResetPasswordScreenNavigationProp =
+  StackNavigationProp<RootStackParamList>;
+
+export const ResetPasswordScreen = () => {
+  const navigation = useNavigation<ResetPasswordScreenNavigationProp>();
   const route = useRoute();
   const { email } = route.params;
 
@@ -46,15 +52,6 @@ const ResetPasswordScreen = () => {
 
   const togglePasswordVisibility = () => setShowPassword(!showPassword);
   const togglePasswordVisibility2 = () => setShowRePassword(!showRePassword);
-
-  const validationSchema = Yup.object().shape({
-    password: Yup.string()
-      .min(8, "Password must be at least 8 characters long")
-      .required("Password is required"),
-    confirmPassword: Yup.string()
-      .oneOf([Yup.ref("password")], "Passwords must match")
-      .required("Confirm Password is required"),
-  });
 
   const updatePassword = async (values: any) => {
     try {
@@ -97,7 +94,7 @@ const ResetPasswordScreen = () => {
 
           <Formik
             initialValues={{ password: "", confirmPassword: "" }}
-            validationSchema={validationSchema}
+            validationSchema={ResetPasswordScreenvalidationSchema}
             onSubmit={updatePassword}
           >
             {({
@@ -185,5 +182,3 @@ const ResetPasswordScreen = () => {
     </KeyboardAvoidingView>
   );
 };
-
-export default ResetPasswordScreen;

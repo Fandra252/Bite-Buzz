@@ -4,7 +4,6 @@ import {
   ScrollView,
   Platform,
   Alert,
-  ActivityIndicator,
 } from "react-native";
 import React, { useState } from "react";
 import {
@@ -32,9 +31,15 @@ import { Input } from "@/components/common/Inputs/Inputs";
 import axios from "axios";
 import LottieView from "lottie-react-native";
 import loadingAnimation from "@/assets/animations/CustomLoading.json";
+import { StackNavigationProp } from "@react-navigation/stack";
+import { RootStackParamList } from "@/types";
 
-const ForgotPasswordScreen = () => {
-  const navigation = useNavigation();
+type ForgotPasswordScreenNavigationProp = StackNavigationProp<
+  RootStackParamList
+>;
+
+ export const ForgotPasswordScreen = () => {
+ const navigation = useNavigation<ForgotPasswordScreenNavigationProp>();
   const [loading, setLoading] = useState(false);
   const [email, setEmail] = useState("");
 
@@ -52,7 +57,7 @@ const ForgotPasswordScreen = () => {
         error.response?.data?.message || "Something went wrong"
       );
     } finally {
-      setLoading(false); // Hide loading indicator
+      setLoading(false);
     }
   };
 
@@ -111,4 +116,3 @@ const ForgotPasswordScreen = () => {
   );
 };
 
-export default ForgotPasswordScreen;

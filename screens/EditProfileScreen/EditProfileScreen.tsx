@@ -1,13 +1,10 @@
 import {
-  View,
   Text,
   Image,
   KeyboardAvoidingView,
   ScrollView,
   Platform,
   Alert,
-  Button,
-  StyleSheet,
 } from "react-native";
 import React, { useEffect, useState } from "react";
 import { Formik } from "formik";
@@ -24,7 +21,6 @@ import {
   InputContainer,
   Label,
   PressableButton,
-  ProfileImage,
   SubInputContainer,
   TextInput,
   Title,
@@ -35,10 +31,15 @@ import { useNavigation } from "@react-navigation/native";
 import { Input } from "@/components/common/Inputs/Inputs";
 import { PressableButtonNextText } from "@/components/common/Texts/Text";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import { StackNavigationProp } from "@react-navigation/stack";
+import { RootStackParamList } from "@/types";
+import { EditProfileScreenValidationSchema } from "@/validations/formValidation";
 
-const EditProfileScreen = () => {
-  const navigation = useNavigation();
-  const [selectedImage, setSelectedImage] = useState(null);
+type EditProfileScreenNavigationProp = StackNavigationProp<RootStackParamList>;
+
+export const EditProfileScreen = () => {
+  const navigation = useNavigation<EditProfileScreenNavigationProp>();
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [initialValues, setInitialValues] = useState({
     name: "",
     email: "",
@@ -94,7 +95,7 @@ const EditProfileScreen = () => {
           uri: selectedImage,
           type: "image/jpeg",
           name: "photo.jpg",
-        });
+        } as any);
       }
       formData.append("email", values.email);
       formData.append("name", values.name);
@@ -102,16 +103,12 @@ const EditProfileScreen = () => {
       formData.append("bio", values.bio);
 
       try {
-        const response = await axios.put(
-          "http://192.168.1.170:4000/user",
-          formData,
-          {
-            headers: {
-              "Content-Type": "multipart/form-data",
-              Authorization: `Bearer ${token}`,
-            },
-          }
-        );
+        await axios.put("http://192.168.1.170:4000/user", formData, {
+          headers: {
+            "Content-Type": "multipart/form-data",
+            Authorization: `Bearer ${token}`,
+          },
+        });
         Alert.alert("Success", "User details and image updated successfully");
         navigation.goBack();
       } catch (error) {
@@ -161,33 +158,27 @@ const EditProfileScreen = () => {
           </HeaderContainer>
           <ImageContainer>
             <InnerImageContainer>
-
-            {/* <Button title="Pick an Image" /> */}
-            <EditButton onPress={pickImage}>
-              <Ionicons name="camera-outline" size={24} color="white" />
-            </EditButton>
-            {selectedImage && (
-              <Image
-              source={{ uri: selectedImage }}
-              style={{ width: "100%", height: "100%", resizeMode: "cover", borderRadius: 100 }}
-              />
-            )}
+              <EditButton onPress={pickImage}>
+                <Ionicons name="camera-outline" size={24} color="white" />
+              </EditButton>
+              {selectedImage && (
+                <Image
+                  source={{ uri: selectedImage }}
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    resizeMode: "cover",
+                    borderRadius: 100,
+                  }}
+                />
+              )}
             </InnerImageContainer>
           </ImageContainer>
 
           <Formik
             initialValues={initialValues}
             enableReinitialize
-            validationSchema={Yup.object({
-              name: Yup.string().required("Full Name is required"),
-              email: Yup.string()
-                .email("Invalid email format")
-                .required("Email is required"),
-              phone: Yup.string()
-                .matches(/^\d{10}$/, "Phone number must be exactly 10 digits")
-                .required("Phone number is required"),
-              bio: Yup.string().max(50, "Bio cannot exceed 50 characters"),
-            })}
+            validationSchema={EditProfileScreenValidationSchema}
             onSubmit={handleSubmitForm}
           >
             {({
@@ -266,5 +257,3 @@ const EditProfileScreen = () => {
     </KeyboardAvoidingView>
   );
 };
-
-export default EditProfileScreen;

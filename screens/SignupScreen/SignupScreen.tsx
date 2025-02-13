@@ -36,9 +36,15 @@ import {
 import { ErrorText } from "@/components/common/ErrorMessagetext/ErrorMessageText";
 import { Input, Input1 } from "@/components/common/Inputs/Inputs";
 import axios from "axios";
+import { StackNavigationProp } from "@react-navigation/stack";
+import { RootStackParamList } from "@/types";
 
-const SignUpScreen = () => {
-  const navigation = useNavigation();
+type SignUpScreenNavigationProp = StackNavigationProp<
+  RootStackParamList
+>;
+
+export const SignUpScreen = () => {
+ const navigation = useNavigation<SignUpScreenNavigationProp>();
   const [showPassword, setShowPassword] = useState(false);
   const [showRePassword, setShowRePassword] = useState(false);
 
@@ -119,9 +125,6 @@ const SignUpScreen = () => {
                 touched,
               }) => (
                 <ButtonContainer>
-                  {/* <View
-                    style={{ paddingBottom: 20, width: "100%", height: "100%" }}
-                  > */}
                   <InputContainer>
                     <SubInputContainer>
                       <LabelText>NAME</LabelText>
@@ -203,7 +206,6 @@ const SignUpScreen = () => {
                     <PressableButtonNextText>SIGN UP</PressableButtonNextText>
                   </PressableButtonNext>
                   </View>
-                  {/* </View> */}
                 </ButtonContainer>
               )}
             </Formik>
@@ -214,4 +216,3 @@ const SignUpScreen = () => {
   );
 };
 
-export default SignUpScreen;

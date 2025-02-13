@@ -34,16 +34,15 @@ import {
 import { ErrorText } from "@/components/common/ErrorMessagetext/ErrorMessageText";
 import { Input, Input1 } from "@/components/common/Inputs/Inputs";
 import axios from "axios";
-
+import { LoginScreenvalidationSchema } from "@/validations/formValidation";
 import { StackNavigationProp } from "@react-navigation/stack";
 import { RootStackParamList } from "@/types";
 
 type LoginScreenNavigationProp = StackNavigationProp<
-  RootStackParamList,
-  "LoginScreen"
+  RootStackParamList
 >;
 
-const LoginScreen = () => {
+ export const LoginScreen = () => {
   const navigation = useNavigation<LoginScreenNavigationProp>();
   const [rememberMe, setRememberMe] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
@@ -64,15 +63,6 @@ const LoginScreen = () => {
       console.error("Error loading saved credentials:", error);
     }
   };
-
-  const validationSchema = Yup.object().shape({
-    email: Yup.string()
-      .email("Please enter a valid email address")
-      .required("Email is required"),
-    password: Yup.string()
-      .min(8, "Password must be at least 8 characters long")
-      .required("Password is required"),
-  });
 
   const handleLogin = async (values: any) => {
     const userData = {
@@ -131,7 +121,7 @@ const LoginScreen = () => {
 
       <Formik
         initialValues={{ email: "", password: "" }}
-        validationSchema={validationSchema}
+        validationSchema={LoginScreenvalidationSchema}
         onSubmit={handleLogin}
       >
         {({
@@ -213,7 +203,7 @@ const LoginScreen = () => {
                   </Pressable>
                 </ForgotPasswordContainer>
               </InputContainer>
-              <View style={{width: "80%"}}>
+              <View style={{ width: "80%" }}>
                 <PressableButtonNext onPress={handleSubmit}>
                   <PressableButtonNextText>LOG IN</PressableButtonNextText>
                 </PressableButtonNext>
@@ -268,4 +258,3 @@ const LoginScreen = () => {
   );
 };
 
-export default LoginScreen;

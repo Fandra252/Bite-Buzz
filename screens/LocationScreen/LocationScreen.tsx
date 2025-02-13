@@ -16,16 +16,14 @@ import { useNavigation } from "@react-navigation/native";
 import * as Location from "expo-location";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
-// Define navigation prop types
 import type { NativeStackNavigationProp } from "@react-navigation/native-stack";
-import { RootStackParamList } from "@/types/navigation";
+import { RootStackParamList } from "@/types";
 
 type LocationScreenNavigationProp = NativeStackNavigationProp<
-  RootStackParamList,
-  "LocationScreen"
+  RootStackParamList
 >;
 
-const LocationScreen: React.FC = () => {
+export const LocationScreen: React.FC = () => {
   const navigation = useNavigation<LocationScreenNavigationProp>();
   const [location, setLocation] = useState<Location.LocationObject | null>(
     null
@@ -57,10 +55,7 @@ const LocationScreen: React.FC = () => {
 
       if (addressData[0]) {
         const formattedAddress = `${addressData[0].city}, ${addressData[0].region}, ${addressData[0].country}`;
-
-        // Store location access in AsyncStorage
         await AsyncStorage.setItem("location", formattedAddress);
-
         navigation.replace("Home")
       }
     } catch (error: any) {
@@ -127,4 +122,3 @@ const LocationScreen: React.FC = () => {
   );
 };
 
-export default LocationScreen;

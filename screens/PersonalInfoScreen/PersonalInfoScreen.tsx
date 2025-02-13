@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import {
   Container,
   DetailsContainer,
@@ -22,12 +22,16 @@ import Ionicons from "@expo/vector-icons/Ionicons";
 import { useNavigation } from "@react-navigation/native";
 import axios from "axios";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { Image, Pressable, Text } from "react-native";
+import { Image, Pressable } from "react-native";
 import { useFocusEffect } from "@react-navigation/native";
 import { useCallback } from "react";
+import { StackNavigationProp } from "@react-navigation/stack";
+import { RootStackParamList } from "@/types";
 
-const PersonalInfoScreen = () => {
-  const navigation = useNavigation();
+type PersonalInfoScreenNavigationProp = StackNavigationProp<RootStackParamList>;
+
+export const PersonalInfoScreen = () => {
+  const navigation = useNavigation<PersonalInfoScreenNavigationProp>();
   const [userData, setUserData] = useState<{
     name?: string;
     bio?: string;
@@ -56,11 +60,11 @@ const PersonalInfoScreen = () => {
       console.log("Error retrieving data" + e);
     }
   }
-   useFocusEffect(
-     useCallback(() => {
-       getData();
-     }, [])
-   );
+  useFocusEffect(
+    useCallback(() => {
+      getData();
+    }, [])
+  );
 
   return (
     <Container>
@@ -135,5 +139,3 @@ const PersonalInfoScreen = () => {
     </Container>
   );
 };
-
-export default PersonalInfoScreen;

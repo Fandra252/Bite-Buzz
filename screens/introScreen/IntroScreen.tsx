@@ -19,6 +19,8 @@ import {
   PressableButtonSkipText,
 } from "@/components/common/Texts/Text";
 import { useNavigation } from "@react-navigation/native";
+import { StackNavigationProp } from "@react-navigation/stack";
+import { RootStackParamList } from "@/types";
 
 const { width, height } = Dimensions.get("window");
 
@@ -49,10 +51,12 @@ const slides = [
   },
 ];
 
-export default function OnBoardingScreen() {
+type ProfileScreenNavigationProp = StackNavigationProp<RootStackParamList>;
+
+export const IntroScreen = () => {
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
   const ref = useRef<FlatList>(null);
-  const navigation = useNavigation();
+  const navigation = useNavigation<ProfileScreenNavigationProp>();
 
   interface UpdateCurrentSlideIndexEvent {
     nativeEvent: {
@@ -74,7 +78,7 @@ export default function OnBoardingScreen() {
     return (
       <View
         style={{
-          width: '80%',
+          width: "80%",
           height: height * 0.28,
           justifyContent: "space-between",
           paddingBottom: 30,
@@ -107,7 +111,13 @@ export default function OnBoardingScreen() {
               </PressableButtonNext>
             </GetStartedViewContainer>
           ) : (
-            <View style={{width: "100%", justifyContent: "center",alignItems:"center"}}>
+            <View
+              style={{
+                width: "100%",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
               <PressableButtonNext onPress={goNextSlide}>
                 <PressableButtonNextText>NEXT</PressableButtonNextText>
               </PressableButtonNext>
@@ -160,7 +170,7 @@ export default function OnBoardingScreen() {
       <Footer />
     </ViewContainer>
   );
-}
+};
 
 const SlideContainer = styled.View`
   width: ${width}px;

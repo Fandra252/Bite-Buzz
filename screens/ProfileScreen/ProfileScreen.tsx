@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import {
   Container,
   DetailsTitle,
@@ -20,22 +20,24 @@ import {
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { COLOR } from "@/theme";
 import { BackPressableButton2 } from "@/components/common/Buttons/Button";
-import { useNavigation, NavigationProp } from "@react-navigation/native";
+import { useNavigation } from "@react-navigation/native";
 import { RootStackParamList } from "@/types";
 import axios from "axios";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useFocusEffect } from "@react-navigation/native";
 import { useCallback } from "react";
 import { Image } from "react-native";
-const ProfileScreen = () => {
-  const navigation = useNavigation<NavigationProp<RootStackParamList>>();
- const [userData, setUserData] = useState<{
-   name?: string;
-   bio?: string;
-   image?: string;
-   profilePic?: string;
- } | null>(null);
+import { StackNavigationProp } from "@react-navigation/stack";
 
+type ProfileScreenNavigationProp = StackNavigationProp<RootStackParamList>;
+export const ProfileScreen = () => {
+  const navigation = useNavigation<ProfileScreenNavigationProp>();
+  const [userData, setUserData] = useState<{
+    name?: string;
+    bio?: string;
+    image?: string;
+    profilePic?: string;
+  } | null>(null);
 
   async function getData() {
     try {
@@ -57,16 +59,18 @@ const ProfileScreen = () => {
     }
   }
   useFocusEffect(
-     useCallback(() => {
-       getData();
-     }, [])
-   );
+    useCallback(() => {
+      getData();
+    }, [])
+  );
 
   async function signOut() {
     try {
-      await AsyncStorage.removeItem("token"); 
+      await AsyncStorage.removeItem("token");
       await AsyncStorage.removeItem("isLoggedIn");
-      navigation.replace("Login")
+      await AsyncStorage.removeItem("savedEmail");
+      await AsyncStorage.removeItem("savedPassword");
+      navigation.replace("Login");
     } catch (error) {
       console.error("Error during sign out", error);
     }
@@ -230,5 +234,3 @@ const ProfileScreen = () => {
     </Container>
   );
 };
-
-export default ProfileScreen;

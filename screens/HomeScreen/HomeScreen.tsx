@@ -111,9 +111,9 @@
 import { StackNavigationProp } from '@react-navigation/stack';
 import { RootStackParamList } from '@/types';
 
-type HomeScreenNavigationProp = StackNavigationProp<RootStackParamList, 'HomeScreen'>;
+type HomeScreenNavigationProp = StackNavigationProp<RootStackParamList>;
 
-const HomeScreen: React.FC = () => {
+export const HomeScreen: React.FC = () => {
   const navigation = useNavigation<HomeScreenNavigationProp>();
   const [address, setAddress] = useState("unknown address");
   async function getData(){
@@ -254,4 +254,3 @@ const HomeScreen: React.FC = () => {
    );
  };
 
- export default HomeScreen;
